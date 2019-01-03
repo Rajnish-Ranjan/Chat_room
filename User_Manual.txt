@@ -1,0 +1,41 @@
+//*USER MANUAL*//
+Welcome! This guide will walk you through the basics of designing Chat
+Room using PHP, where two users can interact.
+
+This project uses two html interfaces/forms.
+One is to validate user and the other one is chat room while the user's
+session is in.
+
+The history of whole chat is stored in a text file including the date
+and time of entering of the massege.
+Image or text massege can be entered in the massege box.
+
+
+*Install XAMPP on your PC.
+
+*Open XAMPP and start Apache and MySQL as well.
+
+*Enter to the directory XAMPP/htdocs in 'C' drive.
+
+//From here, any php file can be viewed using browser.
+
+*Make index.php and supportive files as chat.php under chat directory.
+
+*Open URL: localhost/chat_room/index.php in browser and open it in inginnito mode too.
+
+*Login from different name in both mode.
+
+*If there will be two users already chatting, You will not be allowed to chat
+
+*If the chat is just going to start. You can post a message
+
+*Refresh the chat and if your counter-part has posted the message. Then post the message
+
+*Now you can chat one by one.
+
+
+
+//Thank You
+
+//Rajnish Kumar Ranjan
+//15JE001619

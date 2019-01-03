@@ -1,0 +1,73 @@
+CONTENTS:
+1) PROJECT GOAL
+2) DETAIL & INSTRUCTION
+3) CODE WORKFLOW
+4) FAQ/TROUBLESHOOT
+5) CONTACT DETAIL
+
+#####
+
+1) PROJECT GOAL
+
+->To create a simple Chat Room using PHP
+->To allow two users for chatting
+->To allow users sending message one by one only
+->To save/download the complete chatting information in PDF.
+
+2) DETAIL & INSTRUCTION
+ Files Used
+ 	1. Index.php
+ 		It's the page to login into the chat room
+ 		If the constraints satifies then it gives access to the chat room
+ 		Constraints are
+ 			User-name should not be empty
+ 			More than two users can't chat at a time
+ 	2.chat.php
+ 		The chat box will show following fields:- 
+ 		a.User Name 
+ 		b.Chat Massege 
+ 		c.Date and Time for each submission d.Image (Optional)
+ 		Functions created
+ 			1> User()- The function is used to print current user's name
+ 			2> logout() - To logout the session user by destroying the session and updating current users
+ 			3> Sender() - To get the name of the user sending message from text file
+ 			4> getTime() - To get the current time in proper format
+ 			5> getMessage() - To get the message posted by an user
+ 			6> getImage() - To get the image posted by an user or the error message if it's not valid to be posted
+
+ 	3.Chatdata.txt - It stores the chat history.
+ 		Everytime when we have to access the chat we open it in chat.php and use it.
+
+ 		user1.txt - It stores the name of first live user
+ 		Everytime when we have to access the first user, we open it in chat.txt
+
+ 	4.user2.txt - It stores the name of second live user
+ 		Everytime when we have to access the second user, we open it in chat.txt
+
+ 	5.userno.txt - It store the user no. which live previously
+ 		When a user enters the user no. is set to 0 such that any one can start chat
+
+  Folders used
+ 	1> images/ - Here images are kept after uploading
+
+ 	2> toUpload/ - This folder contains images and files that can be uploaded for chat
+
+ 3)Code Workflow
+ 	*On opening the file index.php. It reads the form(inside html) code here if the values of username is posted It transfers it's control to php code written inside it
+
+ 	There are two cases
+
+ 	1> When It's not login
+ 	 An interface will be provided to give username.
+ 		Now after entering the name it will match with the existing users using chat.php . If the existing users wil be less than two, It will allow.
+ 	2>When it's login the control goes to form with entries (massege,upload image, send or clear(X))
+ 	When any of these inputs will be affected, the control will transfer to the class chatting of the file chat.php .
+
+  4)FAQ/TROUBLESHOOT -
+  	Live update of chat message need to be added 
+  	To overcome the trouble I have created a 'refresh chat' button
+
+  5)CONTACT DETAIL-
+  	Name- Rajnish Kumar Ranjan
+  	CLG - IIT(ISM) Dhanbad
+  	Course - Dual Degree
