@@ -351,7 +351,6 @@ chatHistory.scrollTop = chatHistory.scrollHeight;
 	<script type="text/javascript">
 		
 // Function to continously check the some has submitted any new chat
-// Sorry it's not working
 setInterval(function(){
 	$.ajax({
 			url:'chat.php',
